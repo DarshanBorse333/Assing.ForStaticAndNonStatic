@@ -4,12 +4,31 @@ public class Program
 {
     public static void Main()
     {
-        Patterns.Pattern0();
 
-        Patterns patternobj3 = new Patterns();
-        patternobj3.Pattern1();
+        Console.WriteLine("Enter the data for Doctor1 object");
+        Doctors doctor1 = new Doctors();
+        doctor1.GetData();
+        doctor1.PutData();
 
-        Pattern3();
+        Console.WriteLine("Enter the data for Doctor2 object");
+        Doctors doctor2 = new Doctors();
+        doctor2.GetData();
+        doctor2.PutData();
+        
+
+
+
+
+
+
+
+
+        //Patterns.Pattern0();
+
+        //Patterns patternobj3 = new Patterns();
+        //patternobj3.Pattern1();
+
+        //Pattern3();
 
     }
 
