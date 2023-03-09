@@ -18,7 +18,7 @@ namespace Assing.ForStaticAndNonStatic
 
 
         ////input parameters 
-        public void Sub(int Num1 , int Num2)   
+        public void Sub(int Num1, int Num2)
         {
             int result = Num1 - Num2;
             Console.WriteLine($"Subtraction of {Num1} and {Num2} is = {result}");
@@ -32,7 +32,7 @@ namespace Assing.ForStaticAndNonStatic
 
 
         ////Complex type 
-        
+
 
         public void Add(Arithmetic arth)
         {
@@ -50,16 +50,68 @@ namespace Assing.ForStaticAndNonStatic
 
 
         ////Output Paramters 
-        
 
-        public void Mul1(int num1 , int num2, out int result)
+
+        public void Mul1(int num1, int num2, out int result)
         {
             result = num1 * num2;
         }
 
         public void Add1(int num1, int num2, int num3, out int result)
         {
-            result= num1 + num2 + num3;
+            result = num1 + num2 + num3;
+        }
+
+
+
+
+
+
+
+
+        ////output formal parameter
+
+        public void Mul2(int Num1, int Num2, out int result1)
+        {
+            result1 = Num1 * Num2;
+        }
+
+        //// input output parameters / ref
+
+
+        public void Div1(int a, int b, ref int resultnew)
+        {
+            resultnew = resultnew + b / a;
+        }
+
+        public int Mod(int Num1, int Num2)
+        {
+            int result = Num1 % Num2;
+            return result;
+        }
+
+        public int ArithmeticOperations(int a, int b, out int SubtractionResult, out int MultiplicationResult,
+                                        out int DivisionResult, out int Modresult)
+        {
+            int AdditionResult = a + b;
+            SubtractionResult = a - b;
+            MultiplicationResult = a * b;
+            DivisionResult = a / b;
+            Modresult = a % b;
+
+            return AdditionResult;
+        }
+
+        public int ArithmeticOperations1(int x, int y, out int SubResult, out int MulResult, out int DivResult,
+                                         out int ModResult1)
+        {
+            int AddResult = x + y;
+            SubResult = x - y;
+            MulResult = x * y;
+            DivResult = x / y;
+            ModResult1 = x % y;
+
+            return AddResult;
         }
     }
 }
